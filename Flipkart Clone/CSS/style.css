@@ -1,0 +1,362 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial,sans-serif;
+    background-color: #f1f2f4;
+    scroll-behavior: smooth;
+}
+.nav{
+    display: flex;
+flex-direction: row;
+background-color:#FFFFFF;
+width: 100%;
+padding-left: 60px;
+align-items: center;
+position:fixed;
+top: 0%;
+}
+
+.search{
+    background-color: #f0f5ff;
+    border: 1px solid white;
+    width: 500px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/art-designing-glyph/2048/1871_-_Magnifier-512.png') no-repeat;
+    background-position: 20px 20px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.item{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btn{
+    background-color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.btn:hover{
+    background-color: #2a55e5;
+    color: white;
+}
+.icon{
+    margin-right: 5px;
+}
+.setting{
+    padding: 10px 15px;
+    margin-left: 50px;
+}
+.setting:hover{
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #f1f2f4;
+
+}
+
+.categories
+{
+    display: flex;
+   flex-direction: row;
+    width: 100;
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+
+   align-items: center;
+   justify-content: center;
+}
+.items{
+ margin: 5px 25px 5px 25px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-top: 10px;
+
+}
+.items p{
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.slideshow-container{
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+width: 100;
+    position: relative;
+
+
+}
+.slides{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 25px 12px ;
+    color:grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease-in-out;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color:white;
+}
+.next{
+
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease-in-out;
+
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    animation: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from{opacity: .4;}
+    to {opacity: 1;}
+}
+    
+.category{
+    /* display: flex; */
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    
+}
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.category-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+margin: 20px;
+margin-top: 0px;
+border: 1px solid rgb(209, 208, 208);
+border-radius: 5px;
+padding: 10px;
+font-size: 14px;
+width: 200px;
+height: 250px;
+}
+.deal{
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+}
+.content{
+    display: flex;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+ 
+}
+
+.card{
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+.prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+margin: 20px;
+margin-top: 0px;
+border: 1px solid rgb(209, 208, 208);
+border-radius: 5px;
+padding: 10px;
+font-size: 14px;
+
+}
+.prod img{
+    padding: 10px;
+}
+.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    margin-top: 40px;
+  
+}
+.card-view{
+    width: 60%;
+    height: 80%;
+    position: relative;
+    display: flex;
+}
+.left{
+    background-color: #2874f0;
+    width: 40%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    background-color: white;
+    width: 70%;
+    height: 100%;
+}
+.left p{
+    color: white;
+    font-size: 25px ;
+    font-weight: bold;
+}
+.left span{
+    color:rgb(223, 220, 220);
+    font-size: 18px;
+    margin-bottom: 150px;
+    margin-top: 20px;
+}
+.right{
+    padding: 25px;
+}
+.left img{
+    mix-blend-mode: multiply;
+}
+.mobile{
+border: none;
+font-size: 18px;
+margin-top: 25px;
+}
+.mobile:focus{
+    outline: none;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register-btn{
+        background-color: #fb641b;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+    .sign-btn{
+        background-color: #FFFFFF;
+        border: 1px solid rgb(179, 177, 177);
+        padding: 10px 10px;
+        width: 100%;
+        color: #2874f0;
+        font-size: 18px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 2px;
+        
+    }
+    footer{
+        background-color: #212121;
+        height: 40%;
+        width: 100;
+        padding: 20px;
+        color: white;
+    }
+.footer{
+        
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .list span{
+        color: grey;
+    }
+    .list a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .list p{
+        margin: 0;
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .icons{
+        display: flex;
+        margin-top: 5px;
+        
+    }
+    .footer-bar{
+        display: flex;
+        /* padding: 10px; */
+
+    }
+    .c{
+        color: #c6aa30;
+    }
